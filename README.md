@@ -4,8 +4,9 @@ An example project using Poetry inside a docker environment inspired by this
 
 # Prerequisites
 
-This assumes [Python 3.10+](https://www.python.org/downloads/) and
-[Poetry](https://python-poetry.org/docs) are installed.
+This assumes [make](https://www.gnu.org/software/make/), [Python
+3.10+](https://www.python.org/downloads/), and [Poetry](https://python-poetry.org/docs) are
+installed.
 
 
 # Local development
