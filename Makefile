@@ -11,4 +11,10 @@ rebuild:
 run:
 	docker run --rm -it --net=host poetry_docker:latest
 
-all: build run
+.PHONY: dev-install
+dev-install:
+	poetry --version && poetry install --no-root --all-extras || @echo "Could not find poetry"
+
+.PHONY: dev-run
+dev-run:
+	cd src && poetry run uvicorn main:app

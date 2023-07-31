@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "masto-verif"
+name = "poetry-docker-example"
 version = "0.1.0"
 description = ""
 authors = ["Hugh Enxing"]
 readme = "README.md"
-packages = [{include = "masto_verif"}]
+packages = []
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 fastapi = {extras = ["all"], version = "^0.100.1"}
 
 [tool.poetry.group.dev.dependencies]
