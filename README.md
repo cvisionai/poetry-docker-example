@@ -16,7 +16,12 @@ After cloning this repository, install all dependencies (production and developm
 the system. Next, `make dev-run` will run the server locally, instead of in a docker container. This
 make target will run the code `cd src && poetry run uvicorn main:app`.
 
-# Building and running docker images
+## Why?
+
+This allows a developer to add dependencies to a project by either editing the
+[pyproject.toml](./pyproject.toml) file directly or running `poetry add <package>`.
+
+# Building and running docker images for production
 
 To build for and run in production, the project and its dependencies can be packaged in a docker
 image. Running `make build` will build the docker image (`docker build -t poetry_docker:latest .`),
