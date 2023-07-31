@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "masto-verif"
+version = "0.1.0"
+description = ""
+authors = ["Hugh Enxing"]
+readme = "README.md"
+packages = [{include = "masto_verif"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.100.1"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
